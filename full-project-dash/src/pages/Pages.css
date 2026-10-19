@@ -1,0 +1,149 @@
+.page {
+  min-height: calc(100vh - 183px);
+  padding: 60px 8vw 80px;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #fff;
+}
+
+.page h1 {
+  font-size: clamp(36px, 6vw, 64px);
+  margin: 0 0 12px;
+}
+
+.page .lead {
+  font-size: clamp(18px, 2.2vw, 24px);
+  max-width: 700px;
+  opacity: 0.95;
+  margin: 0 0 40px;
+}
+
+.page--home    { background: linear-gradient(135deg, #ff6b6b, #feca57 50%, #ff9ff3); }
+.page--faq     { background: linear-gradient(135deg, #5f27cd, #54a0ff); }
+.page--plans   { background: linear-gradient(135deg, #10ac84, #1dd1a1 50%, #feca57); }
+.page--contact { background: linear-gradient(135deg, #ee5a24, #f368e0); }
+.page--login   { background: linear-gradient(135deg, #341f97, #0abde3); }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  padding: 28px;
+  backdrop-filter: blur(6px);
+}
+
+.card h2, .card h3 { margin-top: 0; }
+
+.card--featured {
+  background: #fff;
+  color: #222;
+  transform: scale(1.04);
+}
+
+.price {
+  font-size: 44px;
+  font-weight: 800;
+  margin: 8px 0 16px;
+}
+
+.price small { font-size: 18px; font-weight: 400; }
+
+.card ul { padding-left: 20px; line-height: 1.8; }
+
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 14px;
+  background: #1e1e1e;
+  color: #f0d772;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover { filter: brightness(1.25); }
+
+.faq details {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  max-width: 800px;
+}
+
+.faq summary {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq p { margin: 14px 0 0; line-height: 1.6; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 480px;
+}
+
+.form label { font-weight: 600; display: flex; flex-direction: column; gap: 6px; }
+
+.form input, .form textarea, .form select {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 17px;
+}
+
+.form textarea { min-height: 120px; resize: vertical; }
+
+.thanks {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 14px;
+  padding: 16px 20px;
+  max-width: 480px;
+}
+
+.page--dashboard { background: linear-gradient(135deg, #f368e0, #ff9f43 50%, #feca57); }
+
+/* ---------- login / sign-up ---------- */
+
+.form-error {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(160, 20, 40, 0.9);
+  color: #fff;
+  font-weight: 600;
+}
+
+.form .hint {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.form-alt {
+  margin-top: 28px;
+  font-size: 18px;
+}
+
+.form-alt a {
+  color: #f0d772;
+  font-weight: 700;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  filter: none;
+}
