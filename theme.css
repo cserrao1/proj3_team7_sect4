@@ -1,0 +1,8 @@
+/* Colour palette from the style guide. Every page and component uses these. */
+:root {
+  --black: #1e1e1e;       /* nav bar, buttons, body text */
+  --yellow: #f0d772;      /* links, accents */
+  --yellow-deep: #dbc469; /* Login button, gradient end */
+  --grey: #5e5a5a;        /* secondary text */
+  --light: #d9d9d9;       /* cards, inputs, page backdrop */
+}
